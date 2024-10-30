@@ -3,7 +3,7 @@
 ## Author: Katrina Hill
 
 ## Description
-This Java program simulates various probability-based events such as coin tosses, rolling a die, drawing cards from a deck, and compound events using randomization. It provides an easy way to explore the frequency and probability of different outcomes in these classic probability exercises.
+This Java program simulates various probability-based events such as coin tosses, rolling a die, drawing cards from a deck, and compound events using randomization. It provides an easy way to explore the frequency and probability of different outcomes in these probability exercises.
 
 ## Features
 - Coin Toss Simulation: Simulates 100 coin tosses, counting occurrences of heads and tails.
