@@ -1,0 +1,18 @@
+Test Case 1: Normal Coin Toss Simulation
+Expected: Approximately equal heads and tails (e.g., around 50 each in 100 tosses).
+
+Test Case 2: Normal Rolling Die Simulation
+Expected: Approximately equal frequency across all six sides (in 60 rolls).
+
+Test Case 3: Normal Drawing Cards Simulation
+Expected: Roughly equal number of red and black cards (around 10 each in 20 draws).
+
+Edge Test Case 1: Zero Coin Tosses
+Expected: Heads = 0, Tails = 0
+
+Edge Test Case 2: High Number of Flips in Compound Events
+Expected: All combinations (HH, HT, TT) appear.
+
+Edge Test Case 3: Drawing More Cards Than Deck Size
+Expected: Handles drawing more than 52 cards, with potential re-shuffling.
+
