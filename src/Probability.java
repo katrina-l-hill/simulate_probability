@@ -12,7 +12,7 @@ public class Probability {
 
         ProbabilityTest.runTests();
     }
-
+    // Task 1: Simulating Coin Tosses
     public static void coinToss() {
         Random rand = new Random();
         int tossCoin = 100;
@@ -33,6 +33,7 @@ public class Probability {
         System.out.println();
     }
 
+    // Task 2: Rolling a Die
     public static void rollingDie() {
         Random rand = new Random();
         int dieRoll = 60;
@@ -47,7 +48,7 @@ public class Probability {
             System.out.println("Side " + (i + 1) + ": " + frequency[i]);
         }
     }
-
+    // Task 3: Drawing Cards
     public static void drawingCards() {
         List<String> deck = createDeck();
         Collections.shuffle(deck);
@@ -91,6 +92,7 @@ public class Probability {
 
     }
 
+    // Task 4: Probability of Compound Events
     public static void compoundEvents() {
         Random rand = new Random();
         int numFlips = 50;
