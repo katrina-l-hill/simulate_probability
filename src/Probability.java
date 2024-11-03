@@ -1,3 +1,6 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -31,6 +34,15 @@ public class Probability {
         System.out.println("Heads: " + heads);
         System.out.println("Tails: " + tails);
         System.out.println();
+
+        // Export to csv
+        try (PrintWriter writer = new PrintWriter(new FileWriter("coin_toss_results.csv"))) {
+            writer.println("Outcome, Count");
+            writer.println("Heads," + heads);
+            writer.println("Tails," + tails);
+        } catch (IOException e) {
+            System.out.println("Error writing to coin_toss_results.csv: " + e.getMessage());
+        }
     }
 
     // Task 2: Rolling a Die
@@ -47,6 +59,17 @@ public class Probability {
         for (int i = 0; i < frequency.length; i++) {
             System.out.println("Side " + (i + 1) + ": " + frequency[i]);
         }
+
+        // Export to csv
+        try (PrintWriter writer = new PrintWriter(new FileWriter("die_roll_results.csv"))) {
+            writer.println("Side,Count");
+            for (int i = 0; i < frequency.length; i++) {
+                writer.println((i + 1) + "," + frequency[i]);
+            }
+        } catch (IOException e) {
+            System.out.println("Error writing to die_roll_results.csv: " + e.getMessage());
+        }
+
     }
     // Task 3: Drawing Cards
     public static void drawingCards() {
@@ -69,6 +92,16 @@ public class Probability {
         System.out.println("Drawing cards: ");
         System.out.println("Red cards drawn: " + redCard);
         System.out.println("Black cards drawn: " + blackCard);
+
+        // Export to csv
+        try (PrintWriter writer = new PrintWriter(new FileWriter("card_draw_results.csv"))) {
+            writer.println("Color,Count");
+            writer.println("Red," + redCard);
+            writer.println("Black," + blackCard);
+        } catch (IOException e) {
+            System.out.println("Error writing to card_draw_results.csv: " + e.getMessage());
+        }
+
     }
 
 
@@ -117,5 +150,16 @@ public class Probability {
         System.out.println("Two heads (HH): " + HH);
         System.out.println("One head, one tail (HT): " + HT);
         System.out.println("Two tails (TT): " + TT);
+
+        // Export to csv
+        try (PrintWriter writer = new PrintWriter(new FileWriter("compound_event_results.csv"))) {
+            writer.println("Outcome,Count");
+            writer.println("Two heads (HH)," + HH);
+            writer.println("One head, one tail (HT)," + HT);
+            writer.println("Two tails (TT)," + TT);
+        } catch (IOException e) {
+            System.out.println("Error writing to compound_event_results.csv: " + e.getMessage());
+        }
+
     }
 }
