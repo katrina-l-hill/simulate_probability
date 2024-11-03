@@ -11,7 +11,7 @@ public class ProbabilityTest {
         testHighNumFlipsCompoundEvents();
         testDrawingMoreThanDeckSize();
     }
-
+    //Normal test cases
     public static void testCoinToss() {
         System.out.println();
         System.out.println("Test Case 1: Normal Coin Toss Simulation");
@@ -34,24 +34,25 @@ public class ProbabilityTest {
         Probability.drawingCards();
     }
 
+    //Edge test cases
     public static void testZeroCoinToss() {
         System.out.println();
         System.out.println("Edge Test Case 1: Zero Coin Tosses");
         System.out.println("Expected: Heads = 0, Tails = 0.");
         System.out.println();
-        Probability.coinToss(); // Modify method to handle 0 tosses as needed
+        Probability.coinToss();
     }
 
     public static void testHighNumFlipsCompoundEvents() {
         System.out.println("Edge Test Case 2: High Number of Flips in Compound Events");
         System.out.println("Expected: All combinations (HH, HT, TT) appear.");
-        Probability.compoundEvents(); // Modify for high flips if needed
+        Probability.compoundEvents();
     }
 
     public static void testDrawingMoreThanDeckSize() {
         System.out.println();
         System.out.println("Edge Test Case 3: Drawing More Cards Than Deck Size");
         System.out.println("Expected: Handles drawing more than 52 cards, with potential re-shuffling.");
-        Probability.drawingCards(); // Modify method to handle larger draws if needed
+        Probability.drawingCards();
     }
 }

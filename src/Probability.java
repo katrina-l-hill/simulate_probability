@@ -145,6 +145,7 @@ public class Probability {
                 HT++;
             }
         }
+
         System.out.println();
         System.out.println("Probability of Compound Events: ");
         System.out.println("Two heads (HH): " + HH);
