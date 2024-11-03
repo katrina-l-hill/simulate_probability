@@ -13,6 +13,7 @@ This Java program simulates various probability-based events such as coin tosses
 
 ## Files
 - `Probability.java`: The main program that performs the simulations.
+- `ProbabilityTest.java`: A suite of tests for validating the functionality of the probability simulations.
 
 ## Requirements
 - JDK version 8 or higher
